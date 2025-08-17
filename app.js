@@ -1,4 +1,4 @@
-let amigos = [] // Array to hold amigo objects
+let amigos = []; // Array to hold amigo objects
 
 function adicionarAmigo() {
     const input = document.getElementById("amigo");
@@ -31,4 +31,13 @@ function sortearAmigo() {
     const amigoSorteado = amigos[Math.floor(Math.random() * amigos.length)];
     const resultado = document.getElementById("resultado");
     resultado.innerHTML = `<li>${amigoSorteado.nome}</li>`;
+}
+
+function reiniciarJogo() {
+    amigos = [];
+    document.getElementById("amigo").value = "";
+    document.getElementById("listaAmigos").innerHTML = "";
+    document.getElementById("resultado").innerHTML = "";
+    alert("O jogo foi reiniciado!");
+    
 }
