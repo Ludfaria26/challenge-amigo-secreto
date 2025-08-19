@@ -16,11 +16,12 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--color-primary);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .main-content {
@@ -117,7 +118,7 @@ button {
 
 .button-add {
     background-color: var(--color-tertiary);
-    color: var(--color-text);
+    color: var(--color-white);
     border-radius: 0 25px 25px 0;
 }
 
@@ -174,4 +175,19 @@ ul {
 
 .button-draw:hover {
     background-color: var(--color-button-hover);
+}
+
+.rodape {
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 12px;
+    margin-top: 170px;
+    border-radius: 64px 64px 0 0;
+    
 }
